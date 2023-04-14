@@ -8,7 +8,7 @@ module.exports = class HelpCommand extends BaseCommand {
   execute() {
     const prefix = this.client.prefix;
 
-    let out = `:sparkles: **__UNO Commands__** :sparkles:\n
+    let out = `>>> :sparkles: _**__UNO Commands__**_ :sparkles:\n
 **${prefix.toUpperCase()} HELP** - Shows this message!
 **${prefix.toUpperCase()} SUPPORT** - Gets a link to my support guild!
 **${prefix.toUpperCase()} JOIN** - Joins (or creates) a game in the current channel!
@@ -24,7 +24,10 @@ module.exports = class HelpCommand extends BaseCommand {
 
 You can execute up to two commands in a single message by separating them with \`&&\`!
 
-Privacy Policy: <https://github.com/Ratismal/UNO/blob/master/privacy.md>`;
+
+
+** ___IMPORTANT NOTICE : Inactive players will be kicked within two minutes if they don't play a card. So make sure you don't join and go afk___**
+https://cdn.discordapp.com/banners/930809855084724285/eab84163d76f94edbc9d2ff28b90b00e.webp?size=2048`;
 
     return out;
   }
