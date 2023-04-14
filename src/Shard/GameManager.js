@@ -30,7 +30,7 @@ module.exports = class GameManager {
         if (!game.started && (Date.now() - game.lastChange) >= 3 * 60 * 1000) {
           await game.send('The game has been cancelled due to inactivity.');
           this.deleteGame(id);
-        } else if (game.started && (Date.now() - game.lastChange) >= 5 * 60 * 1000) {
+        } else if (game.started && (Date.now() - game.lastChange) >= 2 * 60 * 1000) {
           let user = game.queue[0].member.user;
           let msg = { author: user, channel: { id, }, };
           let out = await this.client.getCommand('quit').execute(msg, []);
