@@ -196,7 +196,7 @@ module.exports = class Game {
         footer: {
           text: `Decks: ${this.rules.DECKS} (${this.rules.DECKS * 108} cards) | `
                 + `Remaining: ${this.deck.length} | Discarded: ${this.discard.length}`,
-          icon_url: 'https://raw.githubusercontent.com/Ratismal/UNO/master/cards/logo.png',
+          icon_url: 'https://raw.githubusercontent.com/GhostRider788/cards/main/cards/logo.png',
         },
         timestamp: moment(this.timeStarted),
       },
